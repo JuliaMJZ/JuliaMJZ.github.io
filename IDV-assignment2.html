@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,100px);
+            grid-template-rows: repeat(10,100px);
+            gap: 5px;
+            grid-auto-flow: column
+        }
+        .svg{
+            width: 500px;
+            height: 500px;
+        }
+        .grayscale{
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- original code-->
+         <svg viewBox="0 0 100 100">
+            <path d="M10 70 Q30 20 60 40 T95 60 L80 95 L20 85 Z" fill="#FF7A7A"/>
+         </svg>
+         <svg viewBox="0 0 100 100">
+            <path d="M5 50 C25 10,55 5,85 30 L70 65 C50 80,30 85,10 70 Z" fill="#8AD3FF" transform="translate(0,0)"/>
+         </svg>
+         <svg viewBox="0 0 100 100">
+            <polygon points="8,88 40,20 65,36 92,22 84,75 50,95 20,80" fill="#FFD27F"/>
+        </svg>
+         <svg viewBox="0 0 100 100">
+            <path d="M90 10 L55 22 C45 30, 38 45, 20 50 L12 70 L40 95 L75 78 Z" fill="#B8E986"/>
+        </svg>
+         <svg viewBox="0 0 100 100">
+            <path d="M15 35 C30 10, 70 5, 85 40 C78 55, 60 62, 48 80 C30 70, 12 60, 15 35 Z" fill="#C39BFF"/>
+        </svg>
+         <svg viewBox="0 0 100 100"><path d="M5 20 L35 12 L70 30 L88 55 L60 72 L42 60 L20 85 L8 60 Z" fill="#FFB3D0" />
+        </svg>
+         <svg viewBox="0 0 100 100">
+            <path d="M20 90 L40 70 C55 60, 80 60, 92 40 L82 18 L45 30 C30 35, 22 50, 12 62 Z" fill="#78D6C7"/>
+        </svg>
+         <svg viewBox="0 0 100 100">
+            <path d="M10 10 L50 20 C68 30, 76 55, 60 75 L30 92 L12 68 Z" fill="#FFD4B8"/>
+        </svg>
+         <svg viewBox="0 0 100 100">
+            <path d="M90 60 C75 40, 70 20, 45 18 C30 22, 20 35, 10 55 L25 78 L60 88 L86 72 Z" fill="#9FB0FF"/>
+        </svg>
+        <svg viewBox="0 0 100 100">
+            <path d="M8 42 L28 18 L54 26 C74 32, 86 56, 70 78 L48 88 L20 74 Z" fill="#FFEB7A"/>
+        </svg>
+
+        <!-- mirrored -->
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M10 70 Q30 20 60 40 T95 60 L80 95 L20 85 Z" fill="#FF7A7A" />
+         </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M5 50 C25 10,55 5,85 30 L70 65 C50 80,30 85,10 70 Z" fill="#8AD3FF" transform="translate(0,0)"/>
+         </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <polygon points="8,88 40,20 65,36 92,22 84,75 50,95 20,80" fill="#FFD27F"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M90 10 L55 22 C45 30, 38 45, 20 50 L12 70 L40 95 L75 78 Z" fill="#B8E986"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M15 35 C30 10, 70 5, 85 40 C78 55, 60 62, 48 80 C30 70, 12 60, 15 35 Z" fill="#C39BFF"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M5 20 L35 12 L70 30 L88 55 L60 72 L42 60 L20 85 L8 60 Z" fill="#FFB3D0" />
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M20 90 L40 70 C55 60, 80 60, 92 40 L82 18 L45 30 C30 35, 22 50, 12 62 Z" fill="#78D6C7"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M10 10 L50 20 C68 30, 76 55, 60 75 L30 92 L12 68 Z" fill="#FFD4B8"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M90 60 C75 40, 70 20, 45 18 C30 22, 20 35, 10 55 L25 78 L60 88 L86 72 Z" fill="#9FB0FF"/>
+        </svg>
+        <svg viewBox="0 0 100 100" transform="scale(-1,1)">
+            <path d="M8 42 L28 18 L54 26 C74 32, 86 56, 70 78 L48 88 L20 74 Z" fill="#FFEB7A"/>
+        </svg>
+
+        <!-- rotated 180 degree -->
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M10 70 Q30 20 60 40 T95 60 L80 95 L20 85 Z" fill="#FF7A7A"/>
+         </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M5 50 C25 10,55 5,85 30 L70 65 C50 80,30 85,10 70 Z" fill="#8AD3FF" transform="translate(0,0)"/>
+         </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <polygon points="8,88 40,20 65,36 92,22 84,75 50,95 20,80" fill="#FFD27F"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M90 10 L55 22 C45 30, 38 45, 20 50 L12 70 L40 95 L75 78 Z" fill="#B8E986"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M15 35 C30 10, 70 5, 85 40 C78 55, 60 62, 48 80 C30 70, 12 60, 15 35 Z" fill="#C39BFF"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M5 20 L35 12 L70 30 L88 55 L60 72 L42 60 L20 85 L8 60 Z" fill="#FFB3D0" />
+        </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M20 90 L40 70 C55 60, 80 60, 92 40 L82 18 L45 30 C30 35, 22 50, 12 62 Z" fill="#78D6C7"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M10 10 L50 20 C68 30, 76 55, 60 75 L30 92 L12 68 Z" fill="#FFD4B8"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="rotate(180)">
+            <path d="M90 60 C75 40, 70 20, 45 18 C30 22, 20 35, 10 55 L25 78 L60 88 L86 72 Z" fill="#9FB0FF"/>
+        </svg>
+        <svg viewBox="0 0 100 100" transform="rotate(180)"">
+            <path d="M8 42 L28 18 L54 26 C74 32, 86 56, 70 78 L48 88 L20 74 Z" fill="#FFEB7A"/>
+        </svg>
+
+        <!-- vertically squeezed by 50% -->
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M10 70 Q30 20 60 40 T95 60 L80 95 L20 85 Z" fill="#FF7A7A"/>
+         </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M5 50 C25 10,55 5,85 30 L70 65 C50 80,30 85,10 70 Z" fill="#8AD3FF" transform="translate(0,0)"/>
+         </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <polygon points="8,88 40,20 65,36 92,22 84,75 50,95 20,80" fill="#FFD27F"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M90 10 L55 22 C45 30, 38 45, 20 50 L12 70 L40 95 L75 78 Z" fill="#B8E986"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M15 35 C30 10, 70 5, 85 40 C78 55, 60 62, 48 80 C30 70, 12 60, 15 35 Z" fill="#C39BFF"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M5 20 L35 12 L70 30 L88 55 L60 72 L42 60 L20 85 L8 60 Z" fill="#FFB3D0" />
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M20 90 L40 70 C55 60, 80 60, 92 40 L82 18 L45 30 C30 35, 22 50, 12 62 Z" fill="#78D6C7"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M10 10 L50 20 C68 30, 76 55, 60 75 L30 92 L12 68 Z" fill="#FFD4B8"/>
+        </svg>
+         <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M90 60 C75 40, 70 20, 45 18 C30 22, 20 35, 10 55 L25 78 L60 88 L86 72 Z" fill="#9FB0FF"/>
+        </svg>
+        <svg viewBox="0 0 100 100" transform="scale(1,0.5)">
+            <path d="M8 42 L28 18 L54 26 C74 32, 86 56, 70 78 L48 88 L20 74 Z" fill="#FFEB7A"/>
+        </svg>
+
+        <!-- grayscale -->
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M10 70 Q30 20 60 40 T95 60 L80 95 L20 85 Z" fill="#FF7A7A"/>
+         </svg>
+         <svg class="grayscale" viewBox="0 0 100 100" >
+            <path d="M5 50 C25 10,55 5,85 30 L70 65 C50 80,30 85,10 70 Z" fill="#8AD3FF" transform="translate(0,0)"/>
+         </svg>
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <polygon points="8,88 40,20 65,36 92,22 84,75 50,95 20,80" fill="#FFD27F"/>
+        </svg>
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M90 10 L55 22 C45 30, 38 45, 20 50 L12 70 L40 95 L75 78 Z" fill="#B8E986"/>
+        </svg>
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M15 35 C30 10, 70 5, 85 40 C78 55, 60 62, 48 80 C30 70, 12 60, 15 35 Z" fill="#C39BFF"/>
+        </svg>
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M5 20 L35 12 L70 30 L88 55 L60 72 L42 60 L20 85 L8 60 Z" fill="#FFB3D0" />
+        </svg>
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M20 90 L40 70 C55 60, 80 60, 92 40 L82 18 L45 30 C30 35, 22 50, 12 62 Z" fill="#78D6C7"/>
+        </svg>
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M10 10 L50 20 C68 30, 76 55, 60 75 L30 92 L12 68 Z" fill="#FFD4B8"/>
+        </svg>
+         <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M90 60 C75 40, 70 20, 45 18 C30 22, 20 35, 10 55 L25 78 L60 88 L86 72 Z" fill="#9FB0FF"/>
+        </svg>
+        <svg class="grayscale" viewBox="0 0 100 100">
+            <path d="M8 42 L28 18 L54 26 C74 32, 86 56, 70 78 L48 88 L20 74 Z" fill="#FFEB7A"/>
+        </svg>
+
+
+       </div>
+</body>
+</html>
